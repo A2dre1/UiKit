@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    
+    .custom-button1 {
+      display: inline-block;
+      padding: 10px 20px;
+      border: 2px solid black; 
+      border-radius: 20px; 
+      color: black;
+      background-color: transparent; 
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .custom-button1:active {
+      background-color: black; 
+      color: white; 
+    }
+
+  
+    .custom-button2 {
+      display: inline-block;
+      padding: 10px 20px;
+      border: 2px solid rgb(255, 255, 255); 
+      border-radius: 10px; 
+      color: black;
+      background-color: white; 
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .custom-button2:active {
+      background-color: darkgray; 
+      color: black; 
+    }
+
+   
+    .custom-button3 {
+      display: inline-block;
+      padding: 10px 20px;
+      border: 2px solid transparent; 
+      border-radius: 20px;
+      color: white; 
+      background-color: #4773B7; 
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    }
+
+    .custom-button3:active {
+      background-color: white; 
+      color: #4773B7; 
+      border-color: #4773B7; 
+    }
+
+   
+    .custom-button4 {
+      display: inline-block;
+      padding: 10px 20px;
+      border: 2px solid #69A29B;
+      border-radius: 20px; 
+      color: black; 
+      background-color: transparent; 
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    }
+
+    .custom-button4:active {
+      background-color: #69A29B; 
+      color: white; 
+      border-color: transparent; 
+    }
+  </style>
+</head>
+<body>
+
+  <button class="custom-button1" onclick="changeColor1()">Создать</button>
+  <button class="custom-button2" onclick="changeColor2()">Рекомендации</button>
+  <button class="custom-button3" onclick="changeColor3()">Учиться</button>
+  <button class="custom-button4" onclick="changeColor4()">Рисование</button>
+
+  <script>
+    function changeColor1() {
+      var button1 = document.querySelector('.custom-button1');
+      button1.style.borderColor = 'black'; 
+      button1.style.backgroundColor = 'black'; 
+      button1.style.color = 'white'; 
+    }
+
+    function changeColor2() {
+      var button2 = document.querySelector('.custom-button2');
+      button2.style.backgroundColor = 'darkgray';
+    }
+
+    function changeColor3() {
+      var button3 = document.querySelector('.custom-button3');
+      button3.style.borderColor = 'blue'; 
+      button3.style.backgroundColor = 'white'; 
+      button3.style.color = 'blue'; 
+    }
+
+    function changeColor4() {
+      var button4 = document.querySelector('.custom-button4');
+      button4.style.borderColor = 'green'; 
+      button4.style.backgroundColor = 'green'; 
+      button4.style.color = 'white'; 
+    }
+  </script>
+
+</body>
+</html>
